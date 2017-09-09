@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TV.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>YHJExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0AF3AE061F645C5E0046DE4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0AF3AE271F6466ED0046DE4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

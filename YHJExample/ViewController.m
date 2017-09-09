@@ -18,23 +18,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTabBarFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 44)
+        contentViewFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 50)];
+    
+    self.tabBar.itemTitleColor = [UIColor lightGrayColor];
+    self.tabBar.itemTitleSelectedColor = [UIColor redColor];
+    self.tabBar.itemTitleFont = [UIFont systemFontOfSize:17];
+    self.tabBar.itemTitleSelectedFont = [UIFont systemFontOfSize:22];
+    self.tabBar.leftAndRightSpacing = 20;
+    
+    self.tabBar.itemFontChangeFollowContentScroll = YES;
+    self.tabBar.itemSelectedBgScrollFollowContent = YES;
+    self.tabBar.itemSelectedBgColor = [UIColor redColor];
+    
+    [self.tabBar setItemSelectedBgInsets:UIEdgeInsetsMake(40, 15, 0, 15) tapSwitchAnimated:NO];
+    [self.tabBar setScrollEnabledAndItemFitTextWidthWithSpacing:40];
+    
+    [self setContentScrollEnabledAndTapSwitchAnimated:NO];
+    self.loadViewOfChildContollerWhileAppear = YES;
+    
+    
     YHJViewController *vc1 = [[YHJViewController alloc] init];
-    vc1.title = @"a";
+    vc1.MRJ__tabItemTitle = @"a";
     
     YHJViewController *vc2 = [[YHJViewController alloc] init];
-    vc2.title = @"2";
+    vc2.MRJ__tabItemTitle = @"2";
     
     YHJViewController *vc3 = [[YHJViewController alloc] init];
-    vc3.title = @"3";
+    vc3.MRJ__tabItemTitle = @"3";
     
     YHJViewController *vc4 = [[YHJViewController alloc] init];
-    vc4.title = @"4";
+    vc4.MRJ__tabItemTitle = @"4";
     
     YHJViewController *vc5 = [[YHJViewController alloc] init];
-    vc5.title = @"5";
+    vc5.MRJ__tabItemTitle = @"5";
     
     YHJViewController *vc6 = [[YHJViewController alloc] init];
-    vc6.title = @"6";
+    vc6.MRJ__tabItemTitle = @"6";
     
     self.viewControllers = @[vc1, vc2, vc3, vc4, vc5, vc6];
     // Do any additional setup after loading the view, typically from a nib.

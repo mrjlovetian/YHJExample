@@ -148,7 +148,13 @@
                  centerMarginRight:self.dotBadgeCenterMarginRight
                         sideLength:self.dotBadgeSideLength];
         
+        
+#if TARGET_OS_IOS
         [item addTarget:self action:@selector(tabItemClicked:) forControlEvents:UIControlEventTouchUpInside];
+#elif TARGET_OS_TV
+        [item addTarget:self action:@selector(tabItemClicked:) forControlEvents:UIControlEventPrimaryActionTriggered];
+#endif
+        
     }
     // 更新每个item的位置
     [self updateItemsFrame];
