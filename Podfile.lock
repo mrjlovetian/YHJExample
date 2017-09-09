@@ -1,0 +1,12 @@
+PODS:
+  - MRJ_BarViewController (0.1.2.2)
+
+DEPENDENCIES:
+  - MRJ_BarViewController
+
+SPEC CHECKSUMS:
+  MRJ_BarViewController: 670cf65e657c0bfbdf28713a30d2afa21d9c42b2
+
+PODFILE CHECKSUM: 9e33a456605f488e6d558abc8a93e0baf9f1c996
+
+COCOAPODS: 1.1.1

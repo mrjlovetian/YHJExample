@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C6A4BD62F5ED27D5EFB855E23468715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0C7659CB79CD2DD2B1CB3F970BB28841 /* MRJ_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE27B251E33473FE89B49E18F4EADE /* MRJ_TabBar.m */; };
+		1086E6DF4243748F8DE8AFA7FF5380C0 /* MRJ_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334BF0A2865066B5660C169ADE0103D8 /* MRJ_TabBarController.m */; };
+		1E8BBEF124232EA25096650444453426 /* MRJ_TabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 639FAF6A395601D27E8500DCA23E47E8 /* MRJ_TabItem.m */; };
+		32D00DF790F6CB8F77A1E4205E24563A /* MRJ_TabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D619A81E1F5D0AF6AC4989B27DFBFB16 /* MRJ_TabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C1E63AB45C4ED0A420FC6F3133F277B /* MRJ_TabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA28EED824B098610C18379A66C2B4C /* MRJ_TabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D1C8352CFF674069FAD213D0740565 /* MRJ_TabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CAB5D9AD231DA6919A988A5F14F8B24 /* MRJ_TabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B462615C2A627952B077894E83551B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DA84A1DC4B0A5D92BA506E1A8CDAC5DA /* Pods-YHJExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB146FD7F7EA1C3F71CC12321C3FA36 /* Pods-YHJExample-dummy.m */; };
+		F631C1D454B224153FF081FF81F27776 /* MRJ_BarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B1C10AB5FEAFE567AE8D32AD869138 /* MRJ_BarViewController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		630CAF0E3C758D981CD50F76BA28F4A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3932C53E129F1E9225828FF53D1EBC2B;
+			remoteInfo = MRJ_BarViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D136262363DCB39BBEF171CEE9BB51 /* Pods-YHJExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHJExample.debug.xcconfig"; sourceTree = "<group>"; };
+		0CAB5D9AD231DA6919A988A5F14F8B24 /* MRJ_TabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_TabBarController.h; path = TableBarViewController/Classes/MRJ_TabBarController.h; sourceTree = "<group>"; };
+		13388B9E03D850DFA9EBFD43A428B370 /* libMRJ_BarViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMRJ_BarViewController.a; path = libMRJ_BarViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F9D7AD39F816A9C0651D42ABDD14C7 /* Pods-YHJExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YHJExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26CA14582C38E377B72FD431CE6433CA /* Pods-YHJExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YHJExample-resources.sh"; sourceTree = "<group>"; };
+		2887D948AB677BBD77649EF38C6F99E8 /* MRJ_BarViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJ_BarViewController.xcconfig; sourceTree = "<group>"; };
+		2A3F5674C7AE005BFEA2DA9737CE2AF8 /* libPods-YHJExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YHJExample.a"; path = "libPods-YHJExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		334BF0A2865066B5660C169ADE0103D8 /* MRJ_TabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_TabBarController.m; path = TableBarViewController/Classes/MRJ_TabBarController.m; sourceTree = "<group>"; };
+		639FAF6A395601D27E8500DCA23E47E8 /* MRJ_TabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_TabItem.m; path = TableBarViewController/Classes/MRJ_TabItem.m; sourceTree = "<group>"; };
+		765F663B3DC7212ED559E8979898B495 /* Pods-YHJExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YHJExample.release.xcconfig"; sourceTree = "<group>"; };
+		7E1ADBE587FE1771C1A4F7DDED7D221A /* MRJ_BarViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJ_BarViewController-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96B1C10AB5FEAFE567AE8D32AD869138 /* MRJ_BarViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJ_BarViewController-dummy.m"; sourceTree = "<group>"; };
+		9EBE27B251E33473FE89B49E18F4EADE /* MRJ_TabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRJ_TabBar.m; path = TableBarViewController/Classes/MRJ_TabBar.m; sourceTree = "<group>"; };
+		BAA28EED824B098610C18379A66C2B4C /* MRJ_TabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_TabBar.h; path = TableBarViewController/Classes/MRJ_TabBar.h; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D619A81E1F5D0AF6AC4989B27DFBFB16 /* MRJ_TabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRJ_TabItem.h; path = TableBarViewController/Classes/MRJ_TabItem.h; sourceTree = "<group>"; };
+		D83C128A85EDB39DC8E38AD17F82B509 /* Pods-YHJExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YHJExample-frameworks.sh"; sourceTree = "<group>"; };
+		EFB146FD7F7EA1C3F71CC12321C3FA36 /* Pods-YHJExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YHJExample-dummy.m"; sourceTree = "<group>"; };
+		FB78C595CFDF6A302DF3823FEB21FF81 /* Pods-YHJExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YHJExample-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61D061DF3E77080F772B550B98B2A04F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6A4BD62F5ED27D5EFB855E23468715 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D4FF8598671D93264A8E95E9AAECD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B462615C2A627952B077894E83551B64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B6E4A675553AD967750C4A939D81394 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3F11F629B6E3D25EDD8F8F1247281B5 /* Pods-YHJExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6AB7FF46D03B730C276516788A79DDE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8289125F2EFFD301E434A41E685D452B /* MRJ_BarViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FDB84EDEC6E3A287BAF809D59FF86D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2887D948AB677BBD77649EF38C6F99E8 /* MRJ_BarViewController.xcconfig */,
+				96B1C10AB5FEAFE567AE8D32AD869138 /* MRJ_BarViewController-dummy.m */,
+				7E1ADBE587FE1771C1A4F7DDED7D221A /* MRJ_BarViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MRJ_BarViewController";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6AB7FF46D03B730C276516788A79DDE0 /* Pods */,
+				C0343526D9135D7BD44F7C5E7A44EC41 /* Products */,
+				5B6E4A675553AD967750C4A939D81394 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8289125F2EFFD301E434A41E685D452B /* MRJ_BarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BAA28EED824B098610C18379A66C2B4C /* MRJ_TabBar.h */,
+				9EBE27B251E33473FE89B49E18F4EADE /* MRJ_TabBar.m */,
+				0CAB5D9AD231DA6919A988A5F14F8B24 /* MRJ_TabBarController.h */,
+				334BF0A2865066B5660C169ADE0103D8 /* MRJ_TabBarController.m */,
+				D619A81E1F5D0AF6AC4989B27DFBFB16 /* MRJ_TabItem.h */,
+				639FAF6A395601D27E8500DCA23E47E8 /* MRJ_TabItem.m */,
+				6FDB84EDEC6E3A287BAF809D59FF86D6 /* Support Files */,
+			);
+			name = MRJ_BarViewController;
+			path = MRJ_BarViewController;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0343526D9135D7BD44F7C5E7A44EC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13388B9E03D850DFA9EBFD43A428B370 /* libMRJ_BarViewController.a */,
+				2A3F5674C7AE005BFEA2DA9737CE2AF8 /* libPods-YHJExample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F11F629B6E3D25EDD8F8F1247281B5 /* Pods-YHJExample */ = {
+			isa = PBXGroup;
+			children = (
+				14F9D7AD39F816A9C0651D42ABDD14C7 /* Pods-YHJExample-acknowledgements.markdown */,
+				FB78C595CFDF6A302DF3823FEB21FF81 /* Pods-YHJExample-acknowledgements.plist */,
+				EFB146FD7F7EA1C3F71CC12321C3FA36 /* Pods-YHJExample-dummy.m */,
+				D83C128A85EDB39DC8E38AD17F82B509 /* Pods-YHJExample-frameworks.sh */,
+				26CA14582C38E377B72FD431CE6433CA /* Pods-YHJExample-resources.sh */,
+				00D136262363DCB39BBEF171CEE9BB51 /* Pods-YHJExample.debug.xcconfig */,
+				765F663B3DC7212ED559E8979898B495 /* Pods-YHJExample.release.xcconfig */,
+			);
+			name = "Pods-YHJExample";
+			path = "Target Support Files/Pods-YHJExample";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D854E46FA416FE890CBEC219C9E01660 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1E63AB45C4ED0A420FC6F3133F277B /* MRJ_TabBar.h in Headers */,
+				93D1C8352CFF674069FAD213D0740565 /* MRJ_TabBarController.h in Headers */,
+				32D00DF790F6CB8F77A1E4205E24563A /* MRJ_TabItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25ADF5D34B888BB94DD117908FF82A5A /* Pods-YHJExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16498B4B6A789106F62E2D9F7D9F81C5 /* Build configuration list for PBXNativeTarget "Pods-YHJExample" */;
+			buildPhases = (
+				CE48A0C0D1865A0FFB90D56F5301ECAD /* Sources */,
+				61D061DF3E77080F772B550B98B2A04F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99E33903563B2A55469B74B6392D059A /* PBXTargetDependency */,
+			);
+			name = "Pods-YHJExample";
+			productName = "Pods-YHJExample";
+			productReference = 2A3F5674C7AE005BFEA2DA9737CE2AF8 /* libPods-YHJExample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3932C53E129F1E9225828FF53D1EBC2B /* MRJ_BarViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC216A470779E036EF0BD36C4FB1374B /* Build configuration list for PBXNativeTarget "MRJ_BarViewController" */;
+			buildPhases = (
+				6F2C42D0A6C5A3722E4D7A3D033FED58 /* Sources */,
+				69D4FF8598671D93264A8E95E9AAECD9 /* Frameworks */,
+				D854E46FA416FE890CBEC219C9E01660 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRJ_BarViewController;
+			productName = MRJ_BarViewController;
+			productReference = 13388B9E03D850DFA9EBFD43A428B370 /* libMRJ_BarViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C0343526D9135D7BD44F7C5E7A44EC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3932C53E129F1E9225828FF53D1EBC2B /* MRJ_BarViewController */,
+				25ADF5D34B888BB94DD117908FF82A5A /* Pods-YHJExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F2C42D0A6C5A3722E4D7A3D033FED58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F631C1D454B224153FF081FF81F27776 /* MRJ_BarViewController-dummy.m in Sources */,
+				0C7659CB79CD2DD2B1CB3F970BB28841 /* MRJ_TabBar.m in Sources */,
+				1086E6DF4243748F8DE8AFA7FF5380C0 /* MRJ_TabBarController.m in Sources */,
+				1E8BBEF124232EA25096650444453426 /* MRJ_TabItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE48A0C0D1865A0FFB90D56F5301ECAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA84A1DC4B0A5D92BA506E1A8CDAC5DA /* Pods-YHJExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99E33903563B2A55469B74B6392D059A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRJ_BarViewController;
+			target = 3932C53E129F1E9225828FF53D1EBC2B /* MRJ_BarViewController */;
+			targetProxy = 630CAF0E3C758D981CD50F76BA28F4A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2297C3B2DA9F76E7A6BE67E61747FC9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D136262363DCB39BBEF171CEE9BB51 /* Pods-YHJExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA30B17611AF2A1228E87084F7EFC3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2887D948AB677BBD77649EF38C6F99E8 /* MRJ_BarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F580A51FCF772C69C69C71BA82853CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765F663B3DC7212ED559E8979898B495 /* Pods-YHJExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FFD0EB9406126D28B4D0911C85978A25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2887D948AB677BBD77649EF38C6F99E8 /* MRJ_BarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16498B4B6A789106F62E2D9F7D9F81C5 /* Build configuration list for PBXNativeTarget "Pods-YHJExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2297C3B2DA9F76E7A6BE67E61747FC9F /* Debug */,
+				F580A51FCF772C69C69C71BA82853CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC216A470779E036EF0BD36C4FB1374B /* Build configuration list for PBXNativeTarget "MRJ_BarViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA30B17611AF2A1228E87084F7EFC3D /* Debug */,
+				FFD0EB9406126D28B4D0911C85978A25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
