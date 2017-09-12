@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTabBarFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, 44)
+    [self setTabBarFrame:CGRectMake(0, 80, [UIScreen mainScreen].bounds.size.width, 44)
         contentViewFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 50)];
     
     self.tabBar.itemTitleColor = [UIColor lightGrayColor];
