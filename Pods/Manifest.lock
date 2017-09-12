@@ -1,12 +1,32 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - MRJ_BarViewController (0.1.2.2)
+  - MRJ_Network (0.1.5):
+    - AFNetworking (~> 3.1)
 
 DEPENDENCIES:
   - MRJ_BarViewController
+  - MRJ_Network
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   MRJ_BarViewController: 670cf65e657c0bfbdf28713a30d2afa21d9c42b2
+  MRJ_Network: 930cfa81a803d1b85b57f17b52d94b99a740150b
 
-PODFILE CHECKSUM: 9e33a456605f488e6d558abc8a93e0baf9f1c996
+PODFILE CHECKSUM: 166514bcd816dd6f141f7f689d3f443887de1e78
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.3.1
