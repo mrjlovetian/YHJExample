@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A4F49B950FCCB1A9073679E9D5C2950B'
-               BlueprintName = 'Pods-YHJExample'
+               BlueprintIdentifier = '721259DBB1D0BD73D03A01458DFC1824'
+               BlueprintName = 'MRJActionSheet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-YHJExample.a'>
+               BuildableName = 'libMRJActionSheet.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -8,16 +8,31 @@
 
 #import "ViewController.h"
 #import "YHJViewController.h"
+#import <MRJActionSheet/MRJActionSheet.h>
 
-@interface ViewController ()
+@interface ViewController ()<MRJActionSheetDelegate>
 
 @end
 
 @implementation ViewController
 
+#pragma mark MRJActionSheetDelegate
+
+- (void)actionSheet:(MRJActionSheet *)actionSheet didClickedButtonAtIndex:(int)buttonIndex{
+    NSLog(@"点击了那个按钮-------%d", buttonIndex);
+}
+
+#pragma mark method
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self initViews];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)initViews{
     [self setTabBarFrame:CGRectMake(0, 80, [UIScreen mainScreen].bounds.size.width, 44)
         contentViewFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64 - 50)];
     
@@ -57,7 +72,20 @@
     vc6.MRJ__tabItemTitle = @"6";
     
     self.viewControllers = @[vc1, vc2, vc3, vc4, vc5, vc6];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(69, 69, 60, 45);
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)clickBtn{
+    
+    MRJActionSheet *shett = [[MRJActionSheet alloc] initWithTitle:@"标题啊" buttonTitles:@[@"第一个按钮", @"第二个按钮", @"第三个按钮", @"第四个按钮"] redButtonIndex:-1 defColor:nil delegate:self];
+    [shett show];
 }
 
 
