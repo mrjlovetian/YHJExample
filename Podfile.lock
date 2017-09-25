@@ -14,22 +14,33 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - MRJ_BarViewController (0.1.2.2)
-  - MRJ_Network (0.1.5):
+  - MBProgressHUD (1.0.0)
+  - MRJ_BarViewController (0.1.5)
+  - MRJ_Network (0.1.9):
     - AFNetworking (~> 3.1)
-  - MRJActionSheet (0.1.1)
+  - MRJ_QRCode (0.2.9.5):
+    - MRJ_QRCode/Code (= 0.2.9.5)
+  - MRJ_QRCode/Code (0.2.9.5)
+  - MRJActionSheet (0.1.4)
+  - MRJHub (0.1.0):
+    - MBProgressHUD
 
 DEPENDENCIES:
-  - MRJ_BarViewController
-  - MRJ_Network
-  - MRJActionSheet
+  - MRJ_BarViewController (~> 0.1.5)
+  - MRJ_Network (~> 0.1.9)
+  - MRJ_QRCode (~> 0.2.9.5)
+  - MRJActionSheet (~> 0.1.4)
+  - MRJHub
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  MRJ_BarViewController: 670cf65e657c0bfbdf28713a30d2afa21d9c42b2
-  MRJ_Network: 930cfa81a803d1b85b57f17b52d94b99a740150b
-  MRJActionSheet: 533f2d302630c641285fca2a739d888821be240f
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MRJ_BarViewController: 2dc605585680b85d3489d09a2a1642181dd275a8
+  MRJ_Network: f97977b8159c899c3ac997a1c77e605735a1a86c
+  MRJ_QRCode: 3e2aec48ef92f4ce826490df4aa4834b04db61ba
+  MRJActionSheet: da42b384240d297edad7833f59dca4e6efa4acd7
+  MRJHub: 9d4bc5d5a038aa574652675b3746f68524cdf60e
 
-PODFILE CHECKSUM: 77f62f1fa1f877a4d9aeeca155437faf97a34cd4
+PODFILE CHECKSUM: 4ef3a90e02daa120f30df749a453b8e5ddf3d096
 
 COCOAPODS: 1.3.1

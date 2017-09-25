@@ -9,35 +9,45 @@
 #import "MRJActionSheet.h"
 #import "UIColor+Additions.h"
 
-#define BUTTON_H 48.0f
+#define BUTTON_HEIGHT 48.0f
 
 @interface MRJActionSheet () {
-    NSArray *_buttonTitles;
-    UIView *_darkView;
-    UIView *_bottomView;
+    NSArray     *_buttonTitles;///所有的标题
+    UIView      *_darkView;///背景视图
+    UIView      *_bottomView;///底部视图
 }
 @end
 
 @implementation MRJActionSheet
 
+///设置代理回调方法
 - (instancetype)initWithTitle:(NSString *)title
                  buttonTitles:(NSArray *)titles
                redButtonIndex:(int)buttonIndex
                      defColor:(NSArray *)indexs
                      delegate:(id<MRJActionSheetDelegate>)delegate{
-    return [self initWithTitle:title titleColor:[UIColor colorWithHexString:@"333333"] buttonTitles:titles redButtonIndex:buttonIndex defColor:indexs delegate:delegate];
+    return [self initWithTitle:title titleColor:[UIColor colorWithHexString:@"333333"] buttonTitles:titles redButtonIndex:buttonIndex defColor:indexs delegate:delegate actionSheetClickBlock:nil];
 }
 
+///有block 回调的方法
+- (instancetype)initWithTitle:(NSString *)title buttonTitles:(NSArray *)titles redButtonIndex:(int)buttonIndex defColor:(NSArray *)indexs actionSheetClickBlock:(MRJActionSheetBlock)actionSheetClickBlock{
+    return [self initWithTitle:title titleColor:[UIColor colorWithHexString:@"333333"] buttonTitles:titles redButtonIndex:buttonIndex defColor:indexs delegate:nil actionSheetClickBlock:actionSheetClickBlock];
+}
+
+///最顶部的方法
 - (instancetype)initWithTitle:(NSString *)title
                    titleColor:(UIColor *)titleColor
                  buttonTitles:(NSArray *)titles
                redButtonIndex:(int)buttonIndex
                      defColor:(NSArray *)indexs
-                     delegate:(id<MRJActionSheetDelegate>)delegate{
+                     delegate:(id<MRJActionSheetDelegate>)delegate
+        actionSheetClickBlock:(MRJActionSheetBlock)actionSheetClickBlock{
     
     if (self = [super init]) {
         
-        _kdelegate = delegate;
+        self.mrjdelegate = delegate;
+        self.mrjActionSheetClickBlock = actionSheetClickBlock;
+        
         
         // 暗黑色的view
         UIView *darkView = [[UIView alloc] init];
@@ -58,7 +68,6 @@
         _bottomView = bottomView;
         
         if (title) {
-            
             // 标题
             UILabel *label = [[UILabel alloc] init];
             label.text = title;
@@ -66,7 +75,7 @@
             label.textColor = [UIColor colorWithHexString:@"b2b1b1"];//LCColor(111, 111, 111);
             label.backgroundColor = [UIColor whiteColor];
             label.textAlignment = NSTextAlignmentCenter;
-            label.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, BUTTON_H);
+            label.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, BUTTON_HEIGHT);
             [bottomView addSubview:label];
         }
         
@@ -105,19 +114,17 @@
                 }
                 [btn setTitleColor:cuTitleColor forState:UIControlStateNormal];
                 [btn addTarget:self action:@selector(didClickBtn:) forControlEvents:UIControlEventTouchUpInside];
-                CGFloat btnY = BUTTON_H * (i + (title ? 1 : 0));
-                btn.frame = CGRectMake(0, btnY, [UIScreen mainScreen].bounds.size.width, BUTTON_H);
+                CGFloat btnY = BUTTON_HEIGHT * (i + (title ? 1 : 0));
+                btn.frame = CGRectMake(0, btnY, [UIScreen mainScreen].bounds.size.width, BUTTON_HEIGHT);
                 [bottomView addSubview:btn];
             }
             
             for (int i = 0; i < titles.count; i++) {
-                
                 // 所有线条
-                UIView *line = [[UIView alloc] init];
+                CGFloat lineY = (i + (title ? 1 : 0)) * BUTTON_HEIGHT;
+                UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, lineY, [UIScreen mainScreen].bounds.size.width, 0.5f)];
                 line.backgroundColor = [UIColor colorWithHexString:@"e5e5e5"];//LCColor(225, 225, 225);
                 line.contentMode = UIViewContentModeCenter;
-                CGFloat lineY = (i + (title ? 1 : 0)) * BUTTON_H;
-                line.frame = CGRectMake(0, lineY, [UIScreen mainScreen].bounds.size.width, 0.5f);
                 [bottomView addSubview:line];
             }
         }
@@ -131,35 +138,35 @@
         [cancelBtn setTitleColor:[UIColor colorWithHexString:@"333333"] forState:UIControlStateNormal];
 //        [cancelBtn setBackgroundImage:[UIImage imageWithColor:UIColorFromRGB(0xdddddd) size:CGSizeMake(1, 1)] forState:UIControlStateHighlighted];
         [cancelBtn addTarget:self action:@selector(didClickCancelBtn) forControlEvents:UIControlEventTouchUpInside];
-        CGFloat btnY = BUTTON_H * (titles.count + (title ? 1 : 0)) + 10.0f;
-        cancelBtn.frame = CGRectMake(0, btnY, [UIScreen mainScreen].bounds.size.width, BUTTON_H);
+        CGFloat btnY = BUTTON_HEIGHT * (titles.count + (title ? 1 : 0)) + 10.0f;
+        cancelBtn.frame = CGRectMake(0, btnY, [UIScreen mainScreen].bounds.size.width, BUTTON_HEIGHT);
         [bottomView addSubview:cancelBtn];
-        CGFloat bottomH = (title ? BUTTON_H : 0) + BUTTON_H * titles.count + BUTTON_H + 10.0f;
+        CGFloat bottomH = (title ? BUTTON_HEIGHT : 0) + BUTTON_HEIGHT * titles.count + BUTTON_HEIGHT + 10.0f;
         bottomView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, bottomH);
-        
         self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
         [[UIApplication sharedApplication].keyWindow addSubview:self];
     }
     return self;
 }
 
-
-
 - (void)didClickBtn:(UIButton *)btn {
-    if ([self.kdelegate respondsToSelector:@selector(actionSheet:didClickedButtonAtIndex:)]) {
-        [self.kdelegate actionSheet:self didClickedButtonAtIndex:(int)btn.tag - 1000];
+    if ([self.mrjdelegate respondsToSelector:@selector(actionSheet:didClickedButtonAtIndex:)]) {
+        [self.mrjdelegate actionSheet:self didClickedButtonAtIndex:(int)btn.tag - 1000];
     }
-    if (self.MRJActionSheetClickedBlock) self.MRJActionSheetClickedBlock(self,(int)btn.tag - 1000);
+    if (self.mrjActionSheetClickBlock) self.mrjActionSheetClickBlock(self,(int)btn.tag - 1000);
     [self dismiss:nil];
 }
 
 - (void)dismiss:(UITapGestureRecognizer *)tap{
     
-    if ([self.kdelegate respondsToSelector:@selector(actionSheetDidCancel:)]
+    if ([self.mrjdelegate respondsToSelector:@selector(actionSheetDidCancel:)]
         && tap) {
-        [self.kdelegate actionSheetDidCancel:self];
+        [self.mrjdelegate actionSheetDidCancel:self];
     }
-    
+    [self dissmissSelf];
+}
+
+- (void)dissmissSelf{
     [UIView animateWithDuration:0.3f
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
@@ -167,40 +174,24 @@
                          
                          _darkView.alpha = 0;
                          _darkView.userInteractionEnabled = NO;
-                         
                          CGRect frame = _bottomView.frame;
                          frame.origin.y += frame.size.height;
                          _bottomView.frame = frame;
                          
                      } completion:^(BOOL finished) {
-                         
                          [self removeFromSuperview];
                      }];
 }
 
 - (void)didClickCancelBtn{
-    if ([self.kdelegate respondsToSelector:@selector(actionSheetDidCancel:)]){
-        [self.kdelegate actionSheetDidCancel:self];
+    if ([self.mrjdelegate respondsToSelector:@selector(actionSheetDidCancel:)]){
+        [self.mrjdelegate actionSheetDidCancel:self];
     }
     
-    [UIView animateWithDuration:0.3f
-                          delay:0
-                        options:UIViewAnimationOptionCurveEaseOut
-                     animations:^{
-                         
-                         _darkView.alpha = 0;
-                         _darkView.userInteractionEnabled = NO;
-                         
-                         CGRect frame = _bottomView.frame;
-                         frame.origin.y += frame.size.height;
-                         _bottomView.frame = frame;
-                         
-                     } completion:^(BOOL finished) {
-                         [self removeFromSuperview];
-                     }];
+    [self dissmissSelf];
 }
 
-- (void) showWithDarkness:(CGFloat)alpha{
+- (void)showWithDarkness:(CGFloat)alpha{
     [UIView animateWithDuration:0.3f
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
@@ -215,6 +206,7 @@
                      } completion:nil];
 }
 
+///完整显示
 - (void)show{
     [self showWithDarkness:0.4];
 }
@@ -226,6 +218,7 @@
     return NO;
 }
 
+///添加特殊的选择栏目
 - (void)addDetailText:(NSString *)detailText atIndex:(NSInteger)index{
    UIButton *btn = [_bottomView viewWithTag:index];
       [btn.titleLabel setLineBreakMode:NSLineBreakByWordWrapping];

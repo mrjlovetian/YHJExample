@@ -1,6 +1,5 @@
 //
 //  MRJ_BaseRequest.m
-//  TopsTechNetWorking
 //
 //  Created by MRJ_ on 2017/2/17.
 //  Copyright © 2017年 MRJ_. All rights reserved.
@@ -136,10 +135,10 @@ NSString *const MRJ_RequestValidationErrorDomain = @"com.mrj.request.validation"
     return 60;
 }
 
-//- (id)requestArgument {
-//    
-//    return nil;
-//}
+- (id)requestArgument {
+    
+    return nil;
+}
 
 - (id)cacheFileNameFilterForRequestArgument:(id)argument {
     return argument;
@@ -161,9 +160,9 @@ NSString *const MRJ_RequestValidationErrorDomain = @"com.mrj.request.validation"
     return nil;
 }
 
-//- (NSDictionary *)requestHeaderFieldValueDictionary {
-//    return nil;
-//}
+- (NSDictionary *)requestHeaderFieldValueDictionary {
+    return nil;
+}
 
 - (NSURLRequest *)buildCustomUrlRequest {
     return nil;
@@ -191,6 +190,5 @@ NSString *const MRJ_RequestValidationErrorDomain = @"com.mrj.request.validation"
 - (NSString *)description {
     return [NSString stringWithFormat:@"<%@: %p>{ URL: %@ } { method: %@ } { arguments: %@ }", NSStringFromClass([self class]), self, self.currentRequest.URL, self.currentRequest.HTTPMethod, self.requestArgument];
 }
-
 
 @end

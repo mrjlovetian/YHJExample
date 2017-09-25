@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		0AF3AE0C1F645C5E0046DE4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3AE0B1F645C5E0046DE4A /* main.m */; };
 		0AF3AE0F1F645C5E0046DE4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3AE0E1F645C5E0046DE4A /* AppDelegate.m */; };
-		0AF3AE121F645C5E0046DE4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3AE111F645C5E0046DE4A /* ViewController.m */; };
 		0AF3AE171F645C5E0046DE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3AE161F645C5E0046DE4A /* Assets.xcassets */; };
 		0AF3AE1A1F645C5E0046DE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3AE181F645C5E0046DE4A /* LaunchScreen.storyboard */; };
-		0AF3AE231F645EE70046DE4A /* YHJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3AE221F645EE70046DE4A /* YHJViewController.m */; };
-		C2B73C501F67C0DD00DDCC7E /* BuildListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B73C4F1F67C0DD00DDCC7E /* BuildListRequest.m */; };
-		C2B73C531F67C7CC00DDCC7E /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B73C521F67C7CC00DDCC7E /* Filter.m */; };
-		C2B73C561F67D9DF00DDCC7E /* XJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2B73C551F67D9DF00DDCC7E /* XJRequest.m */; };
+		C2007A931F78DDFE00DD3C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A891F78DDFE00DD3C53 /* ViewController.m */; };
+		C2007A941F78DDFE00DD3C53 /* YHJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A8B1F78DDFE00DD3C53 /* YHJViewController.m */; };
+		C2007A951F78DDFE00DD3C53 /* BuildListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A8E1F78DDFE00DD3C53 /* BuildListRequest.m */; };
+		C2007A961F78DDFE00DD3C53 /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A901F78DDFE00DD3C53 /* Filter.m */; };
+		C2007A971F78DDFE00DD3C53 /* XJRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A921F78DDFE00DD3C53 /* XJRequest.m */; };
+		C2007A9A1F78DE5700DD3C53 /* MRJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A991F78DE5700DD3C53 /* MRJViewController.m */; };
+		C2007A9D1F78DE9400DD3C53 /* MRJLoalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A9C1F78DE9400DD3C53 /* MRJLoalRequest.m */; };
+		C2007AA01F78EDF700DD3C53 /* MRJFliter.m in Sources */ = {isa = PBXBuildFile; fileRef = C2007A9F1F78EDF700DD3C53 /* MRJFliter.m */; };
 		F1AE810E074C9D3CCEE7C983 /* libPods-YHJExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF87FB8CAE8D27A22E44DCA8 /* libPods-YHJExample.a */; };
 /* End PBXBuildFile section */
 
@@ -24,22 +27,28 @@
 		0AF3AE0B1F645C5E0046DE4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AF3AE0D1F645C5E0046DE4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AF3AE0E1F645C5E0046DE4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AF3AE101F645C5E0046DE4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0AF3AE111F645C5E0046DE4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AF3AE161F645C5E0046DE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF3AE191F645C5E0046DE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF3AE1B1F645C5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF3AE211F645EE70046DE4A /* YHJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHJViewController.h; sourceTree = "<group>"; };
-		0AF3AE221F645EE70046DE4A /* YHJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHJViewController.m; sourceTree = "<group>"; };
 		0AF3AE281F6466ED0046DE4A /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F17CCC119099BD293063569 /* Pods-YHJExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHJExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHJExample/Pods-YHJExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8DA342431E275D1F48D620DA /* Pods-YHJExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHJExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHJExample/Pods-YHJExample.release.xcconfig"; sourceTree = "<group>"; };
-		C2B73C4E1F67C0DD00DDCC7E /* BuildListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildListRequest.h; sourceTree = "<group>"; };
-		C2B73C4F1F67C0DD00DDCC7E /* BuildListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildListRequest.m; sourceTree = "<group>"; };
-		C2B73C511F67C7CC00DDCC7E /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
-		C2B73C521F67C7CC00DDCC7E /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
-		C2B73C541F67D9DF00DDCC7E /* XJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJRequest.h; sourceTree = "<group>"; };
-		C2B73C551F67D9DF00DDCC7E /* XJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJRequest.m; sourceTree = "<group>"; };
+		C2007A881F78DDFE00DD3C53 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C2007A891F78DDFE00DD3C53 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2007A8A1F78DDFE00DD3C53 /* YHJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHJViewController.h; sourceTree = "<group>"; };
+		C2007A8B1F78DDFE00DD3C53 /* YHJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHJViewController.m; sourceTree = "<group>"; };
+		C2007A8D1F78DDFE00DD3C53 /* BuildListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildListRequest.h; sourceTree = "<group>"; };
+		C2007A8E1F78DDFE00DD3C53 /* BuildListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildListRequest.m; sourceTree = "<group>"; };
+		C2007A8F1F78DDFE00DD3C53 /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		C2007A901F78DDFE00DD3C53 /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
+		C2007A911F78DDFE00DD3C53 /* XJRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJRequest.h; sourceTree = "<group>"; };
+		C2007A921F78DDFE00DD3C53 /* XJRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJRequest.m; sourceTree = "<group>"; };
+		C2007A981F78DE5700DD3C53 /* MRJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJViewController.h; sourceTree = "<group>"; };
+		C2007A991F78DE5700DD3C53 /* MRJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJViewController.m; sourceTree = "<group>"; };
+		C2007A9B1F78DE9400DD3C53 /* MRJLoalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJLoalRequest.h; sourceTree = "<group>"; };
+		C2007A9C1F78DE9400DD3C53 /* MRJLoalRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJLoalRequest.m; sourceTree = "<group>"; };
+		C2007A9E1F78EDF700DD3C53 /* MRJFliter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJFliter.h; sourceTree = "<group>"; };
+		C2007A9F1F78EDF700DD3C53 /* MRJFliter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJFliter.m; sourceTree = "<group>"; };
 		EF87FB8CAE8D27A22E44DCA8 /* libPods-YHJExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHJExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,16 +95,9 @@
 			children = (
 				0AF3AE0D1F645C5E0046DE4A /* AppDelegate.h */,
 				0AF3AE0E1F645C5E0046DE4A /* AppDelegate.m */,
-				0AF3AE101F645C5E0046DE4A /* ViewController.h */,
-				0AF3AE111F645C5E0046DE4A /* ViewController.m */,
-				0AF3AE211F645EE70046DE4A /* YHJViewController.h */,
-				0AF3AE221F645EE70046DE4A /* YHJViewController.m */,
-				C2B73C4E1F67C0DD00DDCC7E /* BuildListRequest.h */,
-				C2B73C4F1F67C0DD00DDCC7E /* BuildListRequest.m */,
-				C2B73C511F67C7CC00DDCC7E /* Filter.h */,
-				C2B73C521F67C7CC00DDCC7E /* Filter.m */,
-				C2B73C541F67D9DF00DDCC7E /* XJRequest.h */,
-				C2B73C551F67D9DF00DDCC7E /* XJRequest.m */,
+				C2007A8C1F78DDFE00DD3C53 /* API */,
+				C2007A861F78DDFE00DD3C53 /* Model */,
+				C2007A871F78DDFE00DD3C53 /* ViewController */,
 				0AF3AE161F645C5E0046DE4A /* Assets.xcassets */,
 				0AF3AE181F645C5E0046DE4A /* LaunchScreen.storyboard */,
 				0AF3AE1B1F645C5E0046DE4A /* Info.plist */,
@@ -118,6 +120,43 @@
 				EF87FB8CAE8D27A22E44DCA8 /* libPods-YHJExample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2007A861F78DDFE00DD3C53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2007A871F78DDFE00DD3C53 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2007A881F78DDFE00DD3C53 /* ViewController.h */,
+				C2007A891F78DDFE00DD3C53 /* ViewController.m */,
+				C2007A8A1F78DDFE00DD3C53 /* YHJViewController.h */,
+				C2007A8B1F78DDFE00DD3C53 /* YHJViewController.m */,
+				C2007A981F78DE5700DD3C53 /* MRJViewController.h */,
+				C2007A991F78DE5700DD3C53 /* MRJViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C2007A8C1F78DDFE00DD3C53 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C2007A8D1F78DDFE00DD3C53 /* BuildListRequest.h */,
+				C2007A8E1F78DDFE00DD3C53 /* BuildListRequest.m */,
+				C2007A8F1F78DDFE00DD3C53 /* Filter.h */,
+				C2007A901F78DDFE00DD3C53 /* Filter.m */,
+				C2007A911F78DDFE00DD3C53 /* XJRequest.h */,
+				C2007A921F78DDFE00DD3C53 /* XJRequest.m */,
+				C2007A9B1F78DE9400DD3C53 /* MRJLoalRequest.h */,
+				C2007A9C1F78DE9400DD3C53 /* MRJLoalRequest.m */,
+				C2007A9E1F78EDF700DD3C53 /* MRJFliter.h */,
+				C2007A9F1F78EDF700DD3C53 /* MRJFliter.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		DC63257842F97C8DAA4239C5 /* Pods */ = {
@@ -266,9 +305,56 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YHJExample/Pods-YHJExample-resources.sh",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading001.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0010.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0011.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0012.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0013.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0014.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0015.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0016.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0017.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0018.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0019.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading002.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0020.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0021.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0022.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0023.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0024.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0025.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0026.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0027.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0028.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0029.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading003.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0030.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0031.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0032.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0033.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0034.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0035.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0036.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0037.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0038.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0039.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading004.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0040.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0041.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0042.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0043.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading0044.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading005.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading006.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading007.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading008.png",
+				"${PODS_ROOT}/MRJHub/MRJHub/Assets/mrjloading009.png",
+				"${PODS_ROOT}/MRJ_QRCode/MRJ_QRCode.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,13 +368,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF3AE231F645EE70046DE4A /* YHJViewController.m in Sources */,
-				C2B73C531F67C7CC00DDCC7E /* Filter.m in Sources */,
-				C2B73C501F67C0DD00DDCC7E /* BuildListRequest.m in Sources */,
-				0AF3AE121F645C5E0046DE4A /* ViewController.m in Sources */,
+				C2007A941F78DDFE00DD3C53 /* YHJViewController.m in Sources */,
+				C2007A961F78DDFE00DD3C53 /* Filter.m in Sources */,
+				C2007A951F78DDFE00DD3C53 /* BuildListRequest.m in Sources */,
+				C2007A931F78DDFE00DD3C53 /* ViewController.m in Sources */,
 				0AF3AE0F1F645C5E0046DE4A /* AppDelegate.m in Sources */,
 				0AF3AE0C1F645C5E0046DE4A /* main.m in Sources */,
-				C2B73C561F67D9DF00DDCC7E /* XJRequest.m in Sources */,
+				C2007A9A1F78DE5700DD3C53 /* MRJViewController.m in Sources */,
+				C2007A9D1F78DE9400DD3C53 /* MRJLoalRequest.m in Sources */,
+				C2007A971F78DDFE00DD3C53 /* XJRequest.m in Sources */,
+				C2007AA01F78EDF700DD3C53 /* MRJFliter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

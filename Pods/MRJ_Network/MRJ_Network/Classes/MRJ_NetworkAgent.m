@@ -1,6 +1,5 @@
 //
 //  MRJ_NetworkAgent.m
-//  TopsTechNetWorking
 //
 //  Created by MRJ_ on 2017/2/17.
 //  Copyright © 2017年 MRJ_. All rights reserved.
@@ -18,7 +17,6 @@
 #define MRJ_KNetworkIncompleteDownloadFolderName @"Incomplete"
 
 @implementation MRJ_NetworkAgent{
-    
     AFHTTPSessionManager *_manager;
     MRJ_NetworkConfig *_config;
     AFJSONResponseSerializer *_jsonResponseSerializer;
@@ -26,8 +24,6 @@
     NSMutableDictionary<NSNumber *,MRJ_BaseRequest *> *_requestsRecord;
     
     pthread_mutex_t _lock;
-     //接收返回状态码
-//    NSIndexSet *_allStatusCodes;
 }
 
 + (MRJ_NetworkAgent *)sharedAgent {
@@ -47,12 +43,8 @@
         _requestsRecord = [NSMutableDictionary dictionary];
        
         //接收返回状态码
-        //_allStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(100, 500)];
-        
         _manager.securityPolicy = _config.securityPolicy;
         _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-        // Take over the status code validation
-        //_manager.responseSerializer.acceptableStatusCodes = _allStatusCodes;
     }
     return self;
 }
@@ -60,8 +52,6 @@
 - (AFJSONResponseSerializer *)jsonResponseSerializer {
     if (!_jsonResponseSerializer) {
         _jsonResponseSerializer = [AFJSONResponseSerializer serializer];
-        //_jsonResponseSerializer.acceptableStatusCodes = _allStatusCodes;
-        
     }
     return _jsonResponseSerializer;
 }
@@ -69,7 +59,6 @@
 - (AFXMLParserResponseSerializer *)xmlParserResponseSerialzier {
     if (!_xmlParserResponseSerialzier) {
         _xmlParserResponseSerialzier = [AFXMLParserResponseSerializer serializer];
-        //_xmlParserResponseSerialzier.acceptableStatusCodes = _allStatusCodes;
     }
     return _xmlParserResponseSerialzier;
 }
@@ -107,6 +96,7 @@
             baseUrl = [_config baseUrl];
         }
     }
+    
     // URL slash compability
     NSURL *url = [NSURL URLWithString:baseUrl];
     
@@ -114,7 +104,7 @@
         url = [url URLByAppendingPathComponent:@""];
     }
     
-    NSMutableString *finalDetailUrl = [NSMutableString stringWithString:detailUrl];
+    NSString *finalDetailUrl = [NSMutableString stringWithString:detailUrl];
     if([detailUrl rangeOfString:@"？"].location ==NSNotFound){
         if(request.resetfulArguments){
             if(request.resetfulArguments != NULL){
@@ -262,7 +252,6 @@
     }
 }
 
-
 - (BOOL)validateResult:(MRJ_BaseRequest *)request error:(NSError * _Nullable __autoreleasing *)error {
     BOOL result = [request statusCodeValidator];
     if (!result) {
@@ -310,8 +299,6 @@
     } else {
         request = [requestSerializer requestWithMethod:method URLString:URLString parameters:parameters error:error];
     }
-
-    
     
     __block NSURLSessionDataTask *dataTask = nil;
    
@@ -329,13 +316,6 @@
                                    [self handleRequestResult:dataTask responseObject:responseObject error:_error];
                                }];
     }
-
-    
-    
-    
-    
-    
-    
     
     return dataTask;
 }
@@ -403,7 +383,6 @@
         [request clearCompletionBlock];
     });
 }
-
 
 - (void)requestDidSucceedWithRequest:(MRJ_BaseRequest *)request {
     @autoreleasepool {
@@ -476,7 +455,6 @@
     Unlock();
 }
 
-
 #pragma 文件下载
 - (NSURLSessionDownloadTask *)downloadTaskWithDownloadPath:(NSString *)downloadPath
                                          requestSerializer:(AFHTTPRequestSerializer *)requestSerializer
@@ -543,8 +521,6 @@
     return downloadTask;
 }
 
-
-
 #pragma mark - Resumable Download
 
 - (NSString *)incompleteDownloadTempCacheFolder {
@@ -584,6 +560,5 @@
 - (void)resetURLSessionManagerWithConfiguration:(NSURLSessionConfiguration *)configuration {
     _manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
 }
-
 
 @end

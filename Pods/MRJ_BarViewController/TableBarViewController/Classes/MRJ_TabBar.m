@@ -148,13 +148,11 @@
                  centerMarginRight:self.dotBadgeCenterMarginRight
                         sideLength:self.dotBadgeSideLength];
         
-        
 #if TARGET_OS_IOS
         [item addTarget:self action:@selector(tabItemClicked:) forControlEvents:UIControlEventTouchUpInside];
 #elif TARGET_OS_TV
         [item addTarget:self action:@selector(tabItemClicked:) forControlEvents:UIControlEventPrimaryActionTriggered];
 #endif
-        
     }
     // 更新每个item的位置
     [self updateItemsFrame];
@@ -314,8 +312,8 @@
     // 如果tabbar支持滚动，将选中的item放到tabbar的中央
     [self setSelectedItemCenter];
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(MRJ__tabBar:didSelectedItemAtIndex:)]) {
-        [self.delegate MRJ__tabBar:self didSelectedItemAtIndex:selectedItemIndex];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(tabBar:didSelectedItemAtIndex:)]) {
+        [self.delegate tabBar:self didSelectedItemAtIndex:selectedItemIndex];
     }
 }
 
@@ -712,6 +710,12 @@
             frame.size.width = rightScale * widthDiff + leftSelectedBgWidth;
         }
         self.itemSelectedBgImageView.frame = frame;
+    }
+}
+
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator{
+    if ([context.nextFocusedView isKindOfClass:[MRJ_TabItem class]]) {
+        [self tabItemClicked:(MRJ_TabItem *)(context.nextFocusedView)];
     }
 }
 

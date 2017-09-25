@@ -1,6 +1,5 @@
 //
 //  MRJ_Request.h
-//  TopsTechNetWorking
 //
 //  Created by MRJ_ on 2017/2/20.
 //  Copyright © 2017年 MRJ_. All rights reserved.
@@ -18,7 +17,7 @@ NS_ENUM(NSInteger) {
     MRJ_RequestCacheErrorInvalidCacheTime = -5,
     MRJ_RequestCacheErrorInvalidMetadata = -6,
     MRJ_RequestCacheErrorInvalidCacheData = -7,
-    };
+};
 
 
 @interface MRJ_Request : MRJ_BaseRequest

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YHJViewController.h"
 #import <MRJActionSheet/MRJActionSheet.h>
+#import "MRJViewController.h"
 
 @interface ViewController ()<MRJActionSheetDelegate>
 
@@ -54,32 +55,32 @@
     
     
     YHJViewController *vc1 = [[YHJViewController alloc] init];
-    vc1.MRJ__tabItemTitle = @"a";
+    vc1.mrj_tabItemTitle = @"a";
     
     YHJViewController *vc2 = [[YHJViewController alloc] init];
-    vc2.MRJ__tabItemTitle = @"2";
+    vc2.mrj_tabItemTitle = @"2";
     
     YHJViewController *vc3 = [[YHJViewController alloc] init];
-    vc3.MRJ__tabItemTitle = @"3";
+    vc3.mrj_tabItemTitle = @"3";
     
     YHJViewController *vc4 = [[YHJViewController alloc] init];
-    vc4.MRJ__tabItemTitle = @"4";
+    vc4.mrj_tabItemTitle = @"4";
     
     YHJViewController *vc5 = [[YHJViewController alloc] init];
-    vc5.MRJ__tabItemTitle = @"5";
+    vc5.mrj_tabItemTitle = @"5";
     
-    YHJViewController *vc6 = [[YHJViewController alloc] init];
-    vc6.MRJ__tabItemTitle = @"6";
+    MRJViewController *vc6 = [[MRJViewController alloc] init];
+    vc6.mrj_tabItemTitle = @"6";
     
     self.viewControllers = @[vc1, vc2, vc3, vc4, vc5, vc6];
     
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(69, 69, 60, 45);
-    btn.backgroundColor = [UIColor redColor];
-    [btn setTitle:@"点击" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn.frame = CGRectMake(69, 69, 60, 45);
+//    btn.backgroundColor = [UIColor redColor];
+//    [btn setTitle:@"点击" forState:UIControlStateNormal];
+//    [btn addTarget:self action:@selector(clickBtn) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
 }
 
 - (void)clickBtn{

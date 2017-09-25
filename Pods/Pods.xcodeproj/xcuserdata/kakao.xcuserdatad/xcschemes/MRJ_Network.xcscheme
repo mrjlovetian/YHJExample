@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5E4FD30ED84DFA3993BB5BFCD6B8D65F'
+               BlueprintIdentifier = '0324A940804987581B9107A02F48D44C'
                BlueprintName = 'MRJ_Network'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMRJ_Network.a'>

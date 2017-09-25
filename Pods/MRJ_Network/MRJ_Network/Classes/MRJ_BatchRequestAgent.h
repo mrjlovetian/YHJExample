@@ -1,6 +1,5 @@
 //
 //  MRJ_BatchRequestAgent.h
-//  TopsTechNetWorking
 //
 //  Created by MRJ_ on 2017/2/27.
 //  Copyright © 2017年 MRJ_. All rights reserved.
@@ -11,9 +10,6 @@ NS_ASSUME_NONNULL_BEGIN
 @class MRJ_BatchRequest;
 
 @interface MRJ_BatchRequestAgent : NSObject
-
-- (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)new NS_UNAVAILABLE;
 
 ///  Get the shared batch request agent.
 + (MRJ_BatchRequestAgent *)sharedAgent;
